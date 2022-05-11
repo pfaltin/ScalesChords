@@ -1,29 +1,93 @@
-# data definitions #
-###########
-tone
-struct nota {
-	char naziv;
-	chart povisilica;
-	struct nota *next;
-}
+
+#define MAX_LENGTH 100
+#define NUM_STRINGS 10
+
+// data definitions //
+
+// note
+struct note {"
+	char name;
+	chart atribut; // sharp|flat 
+	struct note *next;
+"}
 
 struct nota *head = NULL;
 struct nota *current = NULL;
 
 
-# chromatic scale
-0,1,2,3,4,5,6,7,8,9,10,11,12
+// chromatic scale
+// 0,1,2,3,4,5,6,7,8,9,10,11,12
+char chromaticScaleSh[11][2]{
+	{"C"},
+	{"C#"},
+	{"D"},
+	{"D#"},
+	{"E"},
+	{"F"},
+	{"F#"},
+	{"G"},
+	{"G#"},
+	{"A"},
+	{"A#"},
+	{"B"},		
+}
+
+char chromaticScaleFL[11][2]{
+	{"C"},
+	{"Db"},
+	{"D"},
+	{"Eb"},
+	{"E"},
+	{"F"},
+	{"Gb"},
+	{"G"},
+	{"Ab"},
+	{"A"},
+	{"Bb"},
+	{"B"},		
+}
+// diatonic scale :  note name , position on scale and chromatic scale
+// https://en.wikipedia.org/wiki/Diatonic_scale
+
+// majorFormula  (T,T,S,T,T,T,S) 
+int majorFormula{0,2,4,5,7,9,11,12};
 
 
+// traditional names, especially when used in a tonal context:
+char intervalsTrad[8][14]{
+							{Tonic},
+							{Supertonic},
+							{Mediant},
+							{Subdominant},
+							{Dominant},
+							{Submediant},
+							{Leading tone},
+							{Tonic}
+						};
 
 
+// minorFormula  (T,S,T,T,S,T,T)
+int minorFormula{0,2,4,5,7,8,10,12};
 
-# diatonic scale :  note name , position on scale and chromatic scale
-# majorFormula  (T,T,S,T,T,T,S) : 
-majorFormula(0,2,4,5,7,9,11,12)
-# minorFormula  (T,S,T,T,S,T,T):
-minorFormula(0,2,4,5,7,8,10,12)
+// modes formula
+// modes, start at x position on diatonic major scale.
+// rotate cirkular linked list with start at position
 
-# intervals 
-# chords
-# guitar / ukulele short notation
+char modes[8][10] = {
+					{"Ionian""},
+					{"Dorian"},
+					{"Phrygian"},
+					{"Lydian"},
+					{"Mixolydian"},
+					{"Aeolian"},
+					{"Locrian"}                      
+					};
+
+// intervals 
+/* 
+		chords formulas
+*/
+// major 0, 
+
+// minor
+// guitar / ukulele short notation
