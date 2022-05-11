@@ -1,0 +1,29 @@
+# data definitions #
+###########
+tone
+struct nota {
+	char naziv;
+	chart povisilica;
+	struct nota *next;
+}
+
+struct nota *head = NULL;
+struct nota *current = NULL;
+
+
+# chromatic scale
+0,1,2,3,4,5,6,7,8,9,10,11,12
+
+
+
+
+
+# diatonic scale :  note name , position on scale and chromatic scale
+# majorFormula  (T,T,S,T,T,T,S) : 
+majorFormula(0,2,4,5,7,9,11,12)
+# minorFormula  (T,S,T,T,S,T,T):
+minorFormula(0,2,4,5,7,8,10,12)
+
+# intervals 
+# chords
+# guitar / ukulele short notation
