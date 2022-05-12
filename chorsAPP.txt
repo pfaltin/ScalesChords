@@ -14,8 +14,15 @@
 		F#6 F#m6 F#7+5 F#7b5 F#m7b5 
 */
 
-// list chords in that scale 
-// list borrowed chords
+// list chords in that scale
+ 
+/* list borrowed chords
+* https://www.musicianonamission.com/borrowed-chords/
+*/ https://www.simplifyingtheory.com/borrowed-chords/
+
+:
+
+
 // data definitions //
 
 // note
