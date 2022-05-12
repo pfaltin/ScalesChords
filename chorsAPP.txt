@@ -1,7 +1,21 @@
+// flow
 
-#define MAX_LENGTH 100
-#define NUM_STRINGS 10
+/* usr input key something like: F#M (M stand for major)
+ list chords shape to 5th fret: maj, min, 7, maj7, min7
+ menu:
+1. exetended chords list 
+2. chords in that scale
+3. borrowed chords
+*/
 
+/* list exetended list of chords:
+ 		F#maj F#min F#7 F#maj7 F#m7 F#mM7 F#dim7 F#aug 
+		F#sus2 F#sus4 F#7sus2 F#7sus4 F#9 F#maj9 F#m9 
+		F#6 F#m6 F#7+5 F#7b5 F#m7b5 
+*/
+
+// list chords in that scale 
+// list borrowed chords
 // data definitions //
 
 // note
@@ -32,25 +46,6 @@ char chromaticScaleSh[11][2]{
 	{"B"},		
 }
 
-char chromaticScaleFL[11][2]{
-	{"C"},
-	{"Db"},
-	{"D"},
-	{"Eb"},
-	{"E"},
-	{"F"},
-	{"Gb"},
-	{"G"},
-	{"Ab"},
-	{"A"},
-	{"Bb"},
-	{"B"},		
-}
-// diatonic scale :  note name , position on scale and chromatic scale
-// https://en.wikipedia.org/wiki/Diatonic_scale
-
-// majorFormula  (T,T,S,T,T,T,S) 
-int majorFormula{0,2,4,5,7,9,11,12};
 
 
 // traditional names, especially when used in a tonal context:
@@ -87,7 +82,7 @@ char modes[8][10] = {
 /* 
 		chords formulas
 */
-// major 0, 
+// major
 
 // minor
 // guitar / ukulele short notation
