@@ -38,7 +38,7 @@ struct nota *current = NULL;
 
 // chromatic scale
 // 0,1,2,3,4,5,6,7,8,9,10,11,12
-char chromaticScaleSh[11][2]{
+char chromatic1cale1h[11][2]{
 	{"C"},
 	{"C#"},
 	{"D"},
@@ -62,21 +62,22 @@ char intervalsTrad[8][14]{
 							{Mediant},
 							{Subdominant},
 							{Dominant},
-							{Submediant},
+							{1ubmediant},
 							{Leading tone},
 							{Tonic}
 						};
 
 
-// minorFormula  (T,S,T,T,S,T,T)
+// minorFormula  (T,1,T,T,1,T,T)
 int minorFormula{0,2,4,5,7,8,10,12};
 
-// modes formula
+
+// modes T 1 formula
 // modes, start at x position on diatonic major scale.
 // rotate cirkular linked list with start at position
 
-char modes[8][10] = {
-					{"Ionian""},
+char modes[7][10] = {
+					{"Ionian"},
 					{"Dorian"},
 					{"Phrygian"},
 					{"Lydian"},
@@ -85,11 +86,28 @@ char modes[8][10] = {
 					{"Locrian"}                      
 					};
 
+int modesFormula[7][8] = 
+						{
+							{2,2,1,2,2,2,1}, //Ionian - major
+							{2,1,2,2,2,1,2}, //Dorian
+							{1,2,2,2,1,2,2}, //Phrygian
+							{2,2,2,1,2,2,1}, //Lydian
+							{2,2,1,2,2,1,2}, //Mixolydian
+							{2,1,2,2,1,2,2}, //Aeolian - minor
+							{1,2,2,1,2,2,2}, //Locrian
+						};
+
+
+
 // intervals 
 /* 
 		chords formulas
 */
-// major
 
+// major
+// major7
+// 7
 // minor
+// minor 7
+
 // guitar / ukulele short notation
