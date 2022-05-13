@@ -1,0 +1,18 @@
+yr92fal@air-od-kbadmin ScalesChords % gh repo create ScalesChords  --public --clone
+✓ Created repository pfaltin/ScalesChords on GitHub
+Initialized empty Git repository in /Users/yr92fal/Documents/code/ScalesChords/ScalesChords/.git/
+yr92fal@air-od-kbadmin ScalesChords % git remote -v
+yr92fal@air-od-kbadmin ScalesChords % git remote add orig01 https://github.com/pfaltin/ScalesChords.git
+yr92fal@air-od-kbadmin ScalesChords % git branch -M mbranch01
+yr92fal@air-od-kbadmin ScalesChords % git push -u orig01 mbranch01
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 118.25 KiB | 9.85 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/pfaltin/ScalesChords.git
+ * [new branch]      mbranch01 -> mbranch01
+branch 'mbranch01' set up to track 'orig01/mbranch01'.
+yr92fal@air-od-kbadmin ScalesChords %
