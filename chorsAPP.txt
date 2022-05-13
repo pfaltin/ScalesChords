@@ -102,6 +102,8 @@ int modesFormula[7][8] =
 // intervals 
 /* 
 		chords formulas
+		https://en.wikipedia.org/wiki/Chord_(music)
+		
 */
 
 // major
